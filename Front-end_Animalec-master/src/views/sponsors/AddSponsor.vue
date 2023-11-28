@@ -11,7 +11,7 @@
           <form @submit.prevent="add">
             <div class="form-group">
               <input
-                v-model="sponsor.name"
+                v-model="name"
                 type="text"
                 class="form-control form-control-lg"
                 id="txtName"
@@ -21,7 +21,7 @@
             </div>
             <div class="form-group">
               <input
-                v-model="sponsor.email"
+                v-model="email"
                 type="text"
                 class="form-control form-control-lg"
                 id="txtEmail"
@@ -31,7 +31,7 @@
             </div>
             <div class="form-group">
               <input
-                v-model="sponsor.budget"
+                v-model="budget"
                 type="text"
                 class="form-control form-control-lg"
                 id="txtBudget"
@@ -40,7 +40,7 @@
               />
             </div>
             <div class="form-group">
-              <select id="sltGroup" class="form-control form-control-lg" v-model="sponsor.animais" required>
+              <select id="sltGroup" class="form-control form-control-lg" v-model="animais" required>
                 <option value>-- SELECIONA ANIMAIS --</option>
                 <option value="trigre">Tigre</option>
                 <option value="leão">Leão</option>
