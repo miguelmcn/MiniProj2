@@ -29,16 +29,6 @@
               />
             </div>
             <div class="form-group">
-              <input
-                v-model="specialist.budget"
-                type="text"
-                class="form-control form-control-lg"
-                id="txtBudget"
-                placeholder="escreve investimento"
-                required
-              />
-            </div>
-            <div class="form-group">
               <select id="sltGroup" class="form-control form-control-lg" v-model="specialist.animals" required>
                 <option value>-- SELECIONA ANIMAIS --</option>
                 <option value="Tigre">Tigre</option>

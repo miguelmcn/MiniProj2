@@ -133,7 +133,7 @@ export default {
       let response = `
           <h4>Email:</b> ${sponsor.email}</h4>
           <h5>Investimento:</b> ${sponsor.budget}</h5>
-          <h5>Investimento:</b> ${sponsor.animals}</h5>
+          <h5>Animais:</b> ${sponsor.animals}</h5>
         `;
             
       return response;

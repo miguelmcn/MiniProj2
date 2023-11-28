@@ -33,7 +33,6 @@
                   <i class="fas fa-arrow-down" v-else @click="sort()"></i>
                 </th>
                 <th scope="col">EMAIL</th>
-                <th scope="col">INVESTIMENTO</th>
                 <th scope="col">AÇÕES</th>
               </tr>
             </thead>
@@ -41,7 +40,6 @@
               <tr v-for="specialist of specialists" :key="specialist._id">
                 <td class="pt-4">{{specialist.name}}</td>
                 <td class="pt-4">{{specialist.email}}</td>
-                <td class="pt-4">{{specialist.budget}}</td>
                 <td>
                   <router-link
                     :to="{name:'editSpecialist', params:{specialistId: specialist._id}}"
@@ -132,8 +130,7 @@ export default {
     generateTemplate(specialist) {
       let response = `
           <h4>Email:</b> ${specialist.email}</h4>
-          <h5>Investimento:</b> ${specialist.budget}</h5>
-          <h5>Investimento:</b> ${specialist.animals}</h5>
+          <h5>Animais:</b> ${specialist.animals}</h5>
         `;
             
       return response;

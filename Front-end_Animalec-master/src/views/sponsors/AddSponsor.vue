@@ -40,7 +40,7 @@
               />
             </div>
             <div class="form-group">
-              <select id="sltGroup" class="form-control form-control-lg" v-model="animais" required>
+              <select id="sltGroup" class="form-control form-control-lg" v-model="animals" required>
                 <option value>-- SELECIONA ANIMAIS --</option>
                 <option value="trigre">Tigre</option>
                 <option value="leão">Leão</option>
