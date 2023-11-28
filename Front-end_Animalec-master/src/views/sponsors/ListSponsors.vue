@@ -147,7 +147,7 @@ export default {
       ).then(
         () => {
           this.$store.dispatch(`sponsor/${REMOVE_SPONSOR}`, id).then(() => {
-            this.$alert(this.getMessage, "Sponsor removido!", "success");
+            this.$alert(this.getMessage, "Patrocinador removido!", "success");
             this.fetchSponsors();
           });
         },
