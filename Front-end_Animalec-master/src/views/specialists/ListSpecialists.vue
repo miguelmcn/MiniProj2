@@ -32,14 +32,14 @@
                   <i class="fas fa-arrow-up" v-if="sortType===1" @click="sort()"></i>
                   <i class="fas fa-arrow-down" v-else @click="sort()"></i>
                 </th>
-                <th scope="col">EMAIL</th>
+                <th scope="col">ANIMAIS</th>
                 <th scope="col">AÇÕES</th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="specialist of specialists" :key="specialist._id">
                 <td class="pt-4">{{specialist.name}}</td>
-                <td class="pt-4">{{specialist.email}}</td>
+                <td class="pt-4">{{specialist.animals}}</td>
                 <td>
                   <router-link
                     :to="{name:'editSpecialist', params:{specialistId: specialist._id}}"
